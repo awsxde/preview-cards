@@ -1,0 +1,41 @@
+body {
+  font-family: "Lexend Deca", sans-serif;
+  background: $Very-light-gray;
+}
+
+.card {
+  &__heading {
+    text-transform: uppercase;
+    font-family: "Big Shoulders Display", cursive;
+    font-size: 3.5rem;
+    letter-spacing: 1px;
+    color: $Very-light-gray;
+  }
+
+  &__text {
+    font-size: 1.4rem;
+    color: $Transparent-white;
+    line-height: 1.7;
+  }
+
+  &-1 {
+    background-color: $Bright-orange;
+    .card__button {
+      color: $Bright-orange;
+    }
+  }
+
+  &-2 {
+    background-color: $Dark-cyan;
+    .card__button {
+      color: $Dark-cyan;
+    }
+  }
+
+  &-3 {
+    background-color: $Very-dark-cyan;
+    .card__button {
+      color: $Very-dark-cyan;
+    }
+  }
+}

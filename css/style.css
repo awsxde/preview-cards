@@ -1,0 +1,109 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  width: 144rem;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  background: #f2f2f2; }
+
+.card__heading {
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 3.5rem;
+  letter-spacing: 1px;
+  color: #f2f2f2; }
+
+.card__text {
+  font-size: 1.4rem;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.7; }
+
+.card-1 {
+  background-color: #e38826; }
+  .card-1 .card__button {
+    color: #e38826; }
+
+.card-2 {
+  background-color: #006970; }
+  .card-2 .card__button {
+    color: #006970; }
+
+.card-3 {
+  background-color: #004241; }
+  .card-3 .card__button {
+    color: #004241; }
+
+.u-margin-top-small-1 {
+  margin-top: 3rem; }
+
+.u-margin-top-small-2 {
+  margin-top: 7rem; }
+
+.button:link, .button:visited {
+  padding: 1.5rem 3rem;
+  border-radius: 100px;
+  border: none;
+  background-color: #f2f2f2;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  border: 2px solid #f2f2f2; }
+
+.button:active, .button:hover {
+  color: #f2f2f2;
+  background-color: transparent; }
+
+.card {
+  max-width: calc($grid-width / 3);
+  height: 47rem;
+  padding: 4rem 4.5rem 4rem 5rem; }
+
+.row {
+  width: 87rem;
+  height: 47rem;
+  margin: 0 auto;
+  border-radius: 7px;
+  overflow: hidden;
+  margin-top: 10rem; }
+  .row:not(:last-child) {
+    margin-bottom: 0rem; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 0rem; }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * 0rem) / 3); }
+
+@media only screen and (max-width: 376px) {
+  body {
+    width: 37.6rem;
+    height: 140rem; }
+  .row {
+    width: 32.6rem;
+    height: 132rem;
+    float: none;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto;
+    border-radius: 1rem; }
+    .row .card {
+      width: 32.6rem;
+      height: calc(132rem / 3);
+      padding: 5rem 6rem 0rem 5rem; }
+      .row .card__button {
+        margin-top: 3rem; } }

@@ -1,0 +1,28 @@
+@media only screen and (max-width: 376px) {
+  body {
+    width: $mobile-width;
+    height: $mobile-height;
+  }
+
+  .row {
+    width: $mobile-row-width;
+    height: $mobile-row-height;
+
+    float: none;
+    display: flex;
+    flex-direction: column;
+
+    margin: 2rem auto;
+    border-radius: 1rem;
+
+    .card {
+      width: $mobile-row-width;
+      height: calc(#{$mobile-row-height} / 3);
+      padding: 5rem 6rem 0rem 5rem;
+
+      &__button {
+        margin-top: 3rem;
+      }
+    }
+  }
+}

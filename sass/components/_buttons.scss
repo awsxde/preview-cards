@@ -1,0 +1,20 @@
+.button {
+  &:link,
+  &:visited {
+    padding: 1.5rem 3rem;
+    border-radius: 100px;
+    border: none;
+    background-color: $Very-light-gray;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid $Very-light-gray;
+  }
+
+  &:active,
+  &:hover {
+    color: $Very-light-gray;
+    background-color: transparent;
+  }
+}
